@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "João Vitor Vitosoaski">
+    <meta name = "description" content = "Loja de Informática e Componentes Eletrônicos">
+    <meta name = "keywords" content = "loja, componentes eletronicos, periférico">
+    <link rel = "stylesheet" href = "css/estilo.css">
+    <link rel = "icon" type="image/x-icon" href = "img/icon.ico">
+    <title>Informática | João Vitor Vitosoaski</title>
+
+</head>
+<body>
+
+    <!------- NAV ------->
+
+    <nav>
+        <div class = "logo">
+            <a href = "/index.html"><img src = "img/logotipo.png" alt = "Logotipo"></a>
+        </div>
+        <ul>
+            <li><a href = "/index.html">Início</a></li>
+            <li><a href = "">Sobre</a></li>
+            <li><a href = "">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <!------- HEADER ------->
+
+    <header>
+        <div id = "imagem_branca">
+            <img src = "img/fundopreto.png" alt = "Imagem de um Laptop">
+            <div id = "divider"></div>
+        </div>
+    </header>
+
+    <!------- MAIN ------->
+
+    <main>
+        <div class = "titulo-main"><h2>Entre em Contato Conosco</h2></div>
+
+        <form id = "form_contato">
+            <label for="nome">Informe seu nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Informe o seu nome" required="true">
+
+            <label for="email">Informe o seu E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Informe seu E-mail" required="true">
+
+            <label>Informe a sua Turma</label>
+            <div class = "form-group">
+                <input type="radio" name="turma" id="turma_1A" value="1A" checked>
+                <label for="turma_1A">1A</label>
+
+                <input type="radio" name="turma" id="turma_1B" value="1B" checked>
+                <label for="turma_1B">1B</label>
+            </div>
+
+            <label for="nome">Motivo:</label>
+            <select name="motivo" id="motivo">
+                <option value="">Selecione o motivo</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="problema">Relatar Problemas</option>
+                <option value="outro">Outros</option>
+            </select>
+
+            <label for="mensagem">Informe sua Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Informe sua Mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+              
+    </main>
+
+    <!------- FOOTER ------->
+
+    <footer>
+
+            <div class="social">
+                <h3>Social</h3>
+
+                <ul>
+                    <li><a href="https://www.facebook.com/Joao.Cz.111">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/joao_vitosoaski/">Instagram</a></li>
+                </ul>
+
+            </div>
+        
+    </footer>
+    <script type = "text/javascript" src = "js/java.js"></script>
+</body>
+</html>
