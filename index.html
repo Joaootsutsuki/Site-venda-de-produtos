@@ -18,12 +18,17 @@
 
     <nav>
         <div class = "logo">
-            <a href = "/index.html"><img src = "img/logotipo.png" alt = "Logotipo"></a>
+            <a href = "/index.html"><img src = "img/logotipo.svg" alt = "Logotipo"></a>
         </div>
         <ul>
             <li><a href = "/index.html">Início</a></li>
-            <li><a href = "">Sobre</a></li>
-            <li><a href = "/contato.html">Carrinho</a></li>
+            <li><a href = "/contato.html">Contato</a></li>
+            <li>
+                <div id = "carrinho" >
+                    <input type="button" value="Carrinho" id="button_carrinho_open">
+                    <span id="quantidade_carrinho">0</span>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -44,74 +49,74 @@
         <div id = "container-items">
             <div class = "items">
 
-                <img src = "img/produtos/gabinete _gamemax_rockstar.png" alt = "Gabinete">
+                <img src = "img/produtos/gabinete _gamemax_rockstar.png" alt = "Gabinete" onclick = "play()" id="gabinete">
                 <h4>Gabinete Gamemax Rockstar 2</h4>
                 <p>R$450,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class = "items">
 
-                <img src = "img/produtos/memoria_ram_8gb.png" alt = "Memoria Ram">
+                <img src = "img/produtos/memoria_ram_8gb.png" alt = "Memoria Ram" onclick = "play()" id="memoria_ram">
                 <h4>Memoria Ram Team Group T-Force 8gb</h4>
                 <p>R$310,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/asusprime_h510m.png" alt = "Placa Mãe">
+                <img src = "img/produtos/asusprime_h510m.png" alt = "Placa Mãe" id="placa_mae" onclick = "play()">
                 <h4>Placa Mãe Asus Prime H510M-HVS</h4>
                 <p>R$647,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/monitor_zowie_240hz.png" alt = "Placa Mãe">
+                <img src = "img/produtos/monitor_zowie_240hz.png" alt = "Monitor" id="monitor" onclick = "play()">
                 <h4>Monitor Zowie 27" 240hz</h4>
                 <p>R$6.140,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/processador_i912th.png" alt = "Processador">
+                <img src = "img/produtos/processador_i912th.png" alt = "Processador" id="processador" onclick = "play()">
                 <h4>Processador Intel I9-12900k 3.2Ghz</h4>
                 <p>R$4.399,90</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/pasta_termica.png" alt = "Processador">
+                <img src = "img/produtos/pasta_termica.png" alt = "Pasta Térmica" id="pasta_termica" onclick = "play()">
                 <h4>Pasta Termica Gelid GC-Extreme</h4>
                 <p>R$76,92</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/morcego_gfallen.png" alt = "Processador">
+                <img src = "img/produtos/morcego_gfallen.png" alt = "Headset" id="headset" onclick = "play()">
                 <h4>Headset Gamer Fallen Morcego</h4>
                 <p>R$443,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/water_cooler.png" alt = "Processador">
+                <img src = "img/produtos/water_cooler.png" alt = "Water Cooler" id="cooler" onclick = "play()">
                 <h4>Water Cooler PCYes Sangue Frio 2, 120mm</h4>
                 <p>R$328,99</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
             <div class="items">
 
-                <img src = "img/produtos/windows_10.png" alt = "Processador">
+                <img src = "img/produtos/windows_10.png" alt = "Windows 10" id="windows" onclick = "play()"> 
                 <h4>Windows 10 Pro</h4>
                 <p>R$1.599,00</p>
-                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho">
+                <input class = "button_cart" type = "button" value = "Adicionar ao Carrinho" onclick = "AddCart()">
 
             </div>
               
@@ -131,10 +136,104 @@
                     <li><a href="">Youtube</a></li>
                     <li><a href="https://www.instagram.com/joao_vitosoaski/">Instagram</a></li>
                 </ul>
-
+               
             </div>
         
     </footer>
+    <div id="modal-view" class="modal-container">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <div class="container-imgs">
+
+                <div class="slider">
+
+                    <div class="slides">
+
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide first">
+                            <img src = "" alt = "Imagem 1" id="imagem_slide_1">
+                        </div>
+                        <div class="slide">
+                            <img src = "" alt = "Imagem 2" id="imagem_slide_2">
+                        </div>
+                        <div class="slide">
+                            <img src = "" alt = "Imagem 3" id="imagem_slide_3">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class = "auto-btn1"></div>
+                            <div class = "auto-btn2"></div>
+                            <div class = "auto-btn3"></div>
+                        </div>                       
+
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div id="especificacao" class="container-especificacao">
+                <div class="titulo-modal" id="no">
+                    <h2>Especificações</h2>
+                    <hr>
+                    <h3 id="titulo_especificacao_modal"></h3>
+                </div>
+                <div class="especificacoes" id="especificacoes__gabinete">
+                    <ul>
+                        <li>Padrão Gabinete: Mid-Tower</li>
+                        <li>Placas Mães Suportadas: ATX / M-ATX / ITX</li>
+                        <li>Espessura da Chapa Metal: SPCC 0.5mm</li>
+                        <li>Padrão de Fonte Compatível: Padrão ATX (parte de baixo)</li>
+                        <li>Material Frontal: Plástico ABS</li>
+                        <li>Material Superior: Metal</li>
+                        <li><b>Entradas / Saídas  Painel Frontal:</b></li>
+                        <li>1x Botão Liga/Desliga</li>
+                        <li>1x Botão Reset</li>
+                        <li>1x Botão Controle brilho do LED</li>
+                        <li>1x Botão Controle modos do LED</li>
+                        <li>1x Porta USB2.0</li>
+                        <li>1x Porta USB3.1</li>
+                    </ul>
+                </div>
+                <div class="especificacoes" id="especificacoes__memoria_ram">
+                    <ul>
+                        <li>Marca: TeamGroup</li>
+                        <li>Modelo:	TLPRD48G2666HC18H01</li>
+                        <li>Tipo: DDR4</li>
+                        <li>Capacidade: 8 GB (1x8GB)</li>
+                        <li>Frequência: 2666 MHz</li>
+                        <li>Latência: 18-18-18-43</li>
+                        <li>Voltagem: 1.2V</li>
+                        <li>Dissipador de calor: Alumínio</li>
+                        <li>Dimensões: 32 x 140 x 7 mm</li>
+                        
+                    </ul>
+                </div>
+                <div class="especificacoes" id="especificacoes__placa_mae">
+                    <ul>
+                        <li>Marca: ASRock</li>
+                        <li>Modelo: H510M-HVS R2.0</li>
+                        <li>CPU: Suporta 10 Gen Intel ® Núcleo ™ Processors e 11 Gen Intel ® Núcleo ™ Processors (LGA1200)</li>
+                        <li>Chipset: Intel ® H510</li>
+                        <li>Armazenamento: 4 x SATA3 6,0 Gb / s conectores, suporte Intel ® Rapid Storage Technology 18, NCQ, AHCI e Hot Plug</li>
+                        <li>Sistema Operacional: Microsoft ® Windows ® 10 64 bits / 11 64 bits</li>
+                        <li>Formato:	Micro ATX: 19,7 x 18,8 cm</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
     <script type = "text/javascript" src = "js/java.js"></script>
 </body>
 </html>

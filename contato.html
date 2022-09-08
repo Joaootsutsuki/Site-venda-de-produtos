@@ -18,12 +18,17 @@
 
     <nav>
         <div class = "logo">
-            <a href = "/index.html"><img src = "img/logotipo.png" alt = "Logotipo"></a>
+            <a href = "/index.html"><img src = "img/logotipo.svg" alt = "Logotipo"></a>
         </div>
         <ul>
             <li><a href = "/index.html">Início</a></li>
-            <li><a href = "">Sobre</a></li>
-            <li><a href = "">Carrinho</a></li>
+            <li><a href = "/contato.html">Contato</a></li>
+            <li>
+                <div id = "carrinho" >
+                    <input type="button" value="Carrinho" id="button_carrinho_open">
+                    <span>0</span>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -50,29 +55,37 @@
 
             <label>Informe a sua Turma</label>
             <div class = "form-group">
-                <input type="radio" name="turma" id="turma_1A" value="1A" checked>
-                <label for="turma_1A">1A</label>
+                <input type="radio" name="turma" id="turma_1A" value="Informática 1º A" checked>
+                <label for="turma_1A">1º A</label>
 
-                <input type="radio" name="turma" id="turma_1B" value="1B" checked>
-                <label for="turma_1B">1B</label>
+                <input type="radio" name="turma" id="turma_1B" value="Informática 1º B" checked>
+                <label for="turma_1B">1º B</label>
             </div>
 
             <label for="nome">Motivo:</label>
-            <select name="motivo" id="motivo">
+            <select name="motivo" id="motivo" required="true">
                 <option value="">Selecione o motivo</option>
-                <option value="duvida">Dúvida</option>
-                <option value="sugestao">Sugestão</option>
-                <option value="problema">Relatar Problemas</option>
-                <option value="outro">Outros</option>
+                <option value="❔ Dúvida"> ❔ Dúvida</option>
+                <option value="🖊️ Sugestão"> 🖊️ Sugestão</option>
+                <option value="❌ Relatar Problemas"> ❌ Relatar Problemas</option>
+                <option value="𓈓 Outros"> 𓈓 Outros</option>
             </select>
 
             <label for="mensagem">Informe sua Mensagem:</label>
             <textarea name="mensagem" id="mensagem" rows="5" placeholder="Informe sua Mensagem"></textarea>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="button_submit">
         </form>
               
     </main>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("mddESBIcE6mtpQefs");
+    })();
+    </script>
 
     <!------- FOOTER ------->
 
@@ -83,8 +96,8 @@
 
                 <ul>
                     <li><a href="https://www.facebook.com/Joao.Cz.111">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Youtube</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
                     <li><a href="https://www.instagram.com/joao_vitosoaski/">Instagram</a></li>
                 </ul>
 

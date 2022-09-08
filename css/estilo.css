@@ -38,7 +38,7 @@ nav{
     width: 100%;
 }
 
-nav, ul{
+nav, nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -54,6 +54,26 @@ nav ul li a{
     font-size: 20px;
     color: var(--cor-fonte01);
     
+}
+#carrinho, #button_carrinho_open{
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    font-family: var(--fonte02);
+    color: var(--cor-fonte01);
+}
+
+#carrinho{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#carrinho span{
+    padding-right: 7px;
 }
 
 nav div a img{
@@ -103,7 +123,7 @@ main div.titulo-main h2{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px 10px;
-    
+    padding-bottom: 50px; 
 }
 
 .items{
@@ -150,11 +170,15 @@ footer{
     height: 100px;
     background: var(--cor-footer);  
     color: var(--cor-fonte01);  
-    padding-top: 10px;
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 
 
@@ -167,8 +191,237 @@ footer{
     color: #d3d3d3;
 }
 
+/*----------- FORMULÁRIO ------------*/
+#form_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-black);
+    color: #FFFFFF;
+    font-family: var(--fonte01);
+    font-size: 22px;
+    gap: 20px;
+    padding-bottom: 50px;
+}
 
-/*----------- HOVER ------------*/
+
+#nome, #email, #mensagem, #motivo{
+    padding: 10px;
+    width: 300px;
+    resize: none;
+}
+
+.form-group label{
+    padding-right: 10px;
+}
+
+.button_submit{
+    border: 0;
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/*----------- MODAL WINDOW ------------*/
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,.5);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: #dddddd;
+    width: 55%;
+    min-width: 500px;
+    height: 55%;
+    min-height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 50px 0px #000000;
+    position: relative;
+}
+
+
+
+.container-imgs{
+    display: flex;
+    align-items: center;
+}
+.container-especificacao{
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.titulo-modal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-modal h2, h3{
+    padding: 12px;
+}
+.titulo-modal hr{
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-black);
+
+}
+
+.especificacoes ul{
+    list-style: none;
+}
+
+.especificacoes ul li{
+    padding-top: 10px;
+}
+[id*="especificacoes__"]{
+    display: none;
+}
+
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(221,221,221);
+    font-size: 15px;
+    font-family: var(--fonte02);
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+/*----------- SLIDER ------------*/
+
+.slider{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 300px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 300px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+} 
+
+.manual-btn{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 3.5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: #000;
+    transition: .7s;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    transition: 1s;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    transition: 1s;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+    transition: 1s;
+}
+
+#radio1:checked ~ .manual-btn{
+    box-shadow: #000;
+}
+
+.navigation-auto div{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 3.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #000;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #000;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #000;
+}
+
+/*----------- HOVER OR FOCUS ------------*/
 
 nav ul li a:hover{
     color:#fdcbd4;
@@ -196,5 +449,36 @@ nav div a img:hover{
     border-radius: 20px;
 }
 
+.button_submit:hover{
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 100px #0c2685, 0 0 10px 6px #0c2685;
+}
+.button_submit:not(:hover){
+    transition-duration: 0.5s;
+    box-shadow: inset 0 0 100px #000000, 0 0 10px 6px #000000;
+}
 
+.form_group:focus{
+    background-color: #8e1d1d;
+}
+
+#nome:focus,
+#email:focus,
+#mensagem:focus{
+    background-color: #D3D3D3;
+}
+
+#carrinho:hover{
+    transition: 0.5s linear;
+    box-shadow: inset 150px 30px 10px 0 #FFAC1C, 0 0 10px 2px #FFAC1C;   
+}
+#motivo:focus{
+    background-color: lightgrey;
+}
+
+.fechar:hover{
+    color: #3a3a3a;
+    background-color: rgb(202, 200, 200);
+    font-size: 14px;
+}
 
