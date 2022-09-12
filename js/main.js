@@ -75,70 +75,70 @@ function play(){
         
     
         if(e.target.id == 'gabinete') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/gabinete _gamemax_rockstar.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/gabinete _gamemax_rockstar_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/gabinete _gamemax_rockstar_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/gabinete _gamemax_rockstar.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/gabinete _gamemax_rockstar_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/gabinete _gamemax_rockstar_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Gabinete";
             hideEspecificacoes()
             document.getElementById('especificacoes_gabinete').style.display = 'block';
 
         
         }else if(e.target.id == 'memoria_ram') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/memoria_ram_8gb.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/memoria_ram_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/memoria_ram_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/memoria_ram_8gb.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/memoria_ram_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/memoria_ram_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Memoria Ram Team Group T-force Vulcan";
             hideEspecificacoes()
             document.getElementById('especificacoes_memoria_ram').style.display = 'block';
         
             
         }else if(e.target.id == 'placa_mae') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/asusprime_h510m.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/asusprime_h510m_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/asusprime_h510m_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/asusprime_h510m.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/asusprime_h510m_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/asusprime_h510m_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Placa mãe ASRock H510M-HVS R2.0";
             hideEspecificacoes()
             document.getElementById('especificacoes_placa_mae').style.display = 'block';
 
         }else if(e.target.id == 'monitor') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/monitor_zowie_240hz.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/monitor_zowie_240hz_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/monitor_zowie_240hz_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/monitor_zowie_240hz.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/monitor_zowie_240hz_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/monitor_zowie_240hz_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Monitor Gamer Zowie XL2546K, 24.5 240Hz";
             hideEspecificacoes()
             document.getElementById('especificacoes_monitor').style.display = 'block';
         }else if(e.target.id == 'processador') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/processador_i912th.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/processador_i912th_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/processador_i912th_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/processador_i912th.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/processador_i912th_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/processador_i912th_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Processadore Intel® Core™ i9-12900K Geração";
             hideEspecificacoes()
             document.getElementById('especificacoes_processador').style.display = 'block';
         }else if(e.target.id == 'pasta_termica') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/pasta_termica.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/pasta_termica_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/pasta_termica_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/pasta_termica.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/pasta_termica_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/pasta_termica_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Pasta Térmica Gelid GC-Extreme";
             hideEspecificacoes()
             document.getElementById('especificacoes_pasta_termica').style.display = 'block';
         }else if(e.target.id == 'headset') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/morcego_gfallen.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/morcego_gfallen_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/morcego_gfallen_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/morcego_gfallen.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/morcego_gfallen_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/morcego_gfallen_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Headset Gamer Fallen Morcego Branco";
             hideEspecificacoes()
             document.getElementById('especificacoes_headset').style.display = 'block';
         }else if(e.target.id == 'cooler') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/water_cooler.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/water_cooler_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/water_cooler_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/water_cooler.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/water_cooler_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/water_cooler_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Water Cooler Sangue Frio 2 120mm";
             hideEspecificacoes()
             document.getElementById('especificacoes_cooler').style.display = 'block';
         }else if(e.target.id == 'windows') {
-            document.getElementById('imagem_slide_1').src = '/img/produtos/windows_10.png';
-            document.getElementById('imagem_slide_2').src = '/img/produtos/windows_10_2.png';
-            document.getElementById('imagem_slide_3').src = '/img/produtos/windows_10_3.png';
+            document.getElementById('imagem_slide_1').src = 'img/produtos/windows_10.png';
+            document.getElementById('imagem_slide_2').src = 'img/produtos/windows_10_2.png';
+            document.getElementById('imagem_slide_3').src = 'img/produtos/windows_10_3.png';
             document.getElementById('titulo_componente_modal').innerHTML = "Windows 10 Pro";
             document.getElementById('titulo_especificacao_modal').innerHTML = "Requisitos";
             hideEspecificacoes()
